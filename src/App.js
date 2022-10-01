@@ -1,13 +1,13 @@
-import { useState } from 'react';
+import React from 'react';
+
+import Portfolio from './components/Portfolio';
 
 
 
 function App() {
   return (
     <>
-    <h1>
-      James Montgomery Full Stack Developer
-    </h1>
+    <Portfolio/>
     </>
   );
 }

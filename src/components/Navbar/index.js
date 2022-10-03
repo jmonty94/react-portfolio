@@ -25,7 +25,7 @@ const Navbar = ({currentPage, changePage}) => {
           onClick={handleClick}
           variant='contained'
         >
-          Dashboard
+          Menu
         </Button>
         <Menu
           id="basic-menu"

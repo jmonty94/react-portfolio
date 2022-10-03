@@ -1,17 +1,18 @@
+import { Box, Typography } from '@mui/material'
 import React from 'react'
 import ProjectCard from '../../components/ProjectCard'
 import projects from '../../currentProjects'
 
 export default function Projects(){
     return(
-        <div>
-           <div>
-            <h2>My Latest Work</h2>
-            <p>These are some of the projects I am most proud of that I either created entirely myself,
+        <Box sx={{justifyContent:'center', m:2, width: "85%"}}>
+           <Box sx={{justifyContent:'center', textAlign:"center", boxShadow: 3, borderRadius: 1}}>
+            <Typography variant='h4' component="h4" align='center'>My Latest Work</Typography>
+            <Typography align='center' sx={{width:'50%', m:'auto'}}>These are some of the projects I am most proud of that I either created entirely myself,
                 or worked with a team on, or debugged a prexisting codebase.
-            </p>
-           </div>
-           <div>
+            </Typography>
+           </Box>
+           <Box sx={{justifyContent:'center',  m:'auto', display:'flex', flexWrap:'wrap'}}>
             {
                 projects.map((project,index) => {
                     return(
@@ -26,7 +27,7 @@ export default function Projects(){
                     )
                 })
             }
-           </div>
-        </div>
+           </Box>
+        </Box>
     )
 };

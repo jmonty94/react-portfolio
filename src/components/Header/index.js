@@ -1,15 +1,15 @@
 import React from "react";
-import { Avatar, Grid } from "@mui/material";
-import Image from "mui-image";
+import { Avatar, Typography } from "@mui/material";
 import Navbar from "../Navbar";
+import { Box } from "@mui/system";
+import profilePic from './../../images/Profile.PNG'
 
 
 
-export default function Header({currentPage, changePage}){
+export default function Header({ currentPage, changePage }) {
     return (
-        <div>
-            <header>
-                {/* <Grid container spacing={2}>
+        <Box sx={{ justifyContent: 'space-between', display: 'flex'}}>
+            {/* <Grid container spacing={2}>
                     <Grid item xs={12}>
                         <Image alt='James Montgomery' src='/img/Profile.png' height="100%"
                             width="100%"
@@ -27,11 +27,10 @@ export default function Header({currentPage, changePage}){
                         />
                     </Grid>
                 </Grid> */}
-                <Avatar alt="James Montgomery" src="./img/Profile.png" sx={{width: 120, height: 120}}/>
-                <h2>James Montgomery Full Stack Developer</h2>
-            </header>
+            <Avatar alt="James Montgomery" src={profilePic} sx={{ width: 120, height: 120 }} />
+            <Typography variant="h4" component='h1'>James Montgomery<br /> Full Stack Developer</Typography >
             <Navbar currentPage={currentPage} changePage={changePage}></Navbar>
-        </div>
+        </Box>
 
     )
 };

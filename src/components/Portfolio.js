@@ -3,6 +3,7 @@ import Header from "./Header";
 import About from "../pages/AboutMe";
 import Projects from "../pages/Projects";
 import Contact from "./Contact";
+import { Container, Grid } from "@mui/material";
 
 export default function Portfolio() {
     const [currentPage, setCurrentPage] = useState('About Me');
@@ -12,9 +13,9 @@ export default function Portfolio() {
             case 'About Me':
                 return <About/>;
             case 'Projects':
-                return <Projects/>
+                return <Projects/>;
             case 'Contact':
-                return <Contact/>
+                return <Contact/>;
             default:
                 return <About/>;
         }
@@ -23,11 +24,11 @@ export default function Portfolio() {
     const changePage = (page) => setCurrentPage(page);
 
     return (
-        <div>
-            <Header currentPage={currentPage} changePage={changePage}/>
-            <div>
+        <Container sx={{justifyContent: 'center', display:'flex', flexDirection: 'column'}} >
+            <Header sx={{justifyContent:'space-between', display: 'flex'}} currentPage={currentPage} changePage={changePage}/>
+            <Grid container sx={{m:3, justifyContent: "center"}}>
                 {renderPage()}
-            </div>
-        </div>
+            </Grid>
+        </Container >
     )
 }

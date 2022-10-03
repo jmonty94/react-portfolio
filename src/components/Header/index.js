@@ -8,7 +8,7 @@ import profilePic from './../../images/Profile.PNG'
 
 export default function Header({ currentPage, changePage }) {
     return (
-        <Box sx={{ justifyContent: 'space-between', display: 'flex'}}>
+        <Box sx={{ justifyContent: 'space-between', display: 'flex', mt:5}}>
             {/* <Grid container spacing={2}>
                     <Grid item xs={12}>
                         <Image alt='James Montgomery' src='/img/Profile.png' height="100%"

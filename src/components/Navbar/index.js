@@ -10,6 +10,10 @@ const Navbar = ({currentPage, changePage}) => {
       setAnchorEl(event.currentTarget);
     };
     const handleClose = (event) => {
+      if (event.currentTarget.textContent === '') {
+        setAnchorEl(null)
+        return
+      }
       changePage(event.currentTarget.textContent)
       console.log(event.currentTarget.textContent);
       setAnchorEl(null);

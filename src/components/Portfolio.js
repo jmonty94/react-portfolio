@@ -17,8 +17,6 @@ export default function Portfolio() {
                 return <Projects/>;
             case 'Contact':
                 return <Contact/>;
-            default:
-                return <About/>;
         }
     };
 

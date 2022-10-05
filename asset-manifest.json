@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.js": "/react-portfolio/static/js/main.beaae4d7.js",
+    "static/js/787.5e81464e.chunk.js": "/react-portfolio/static/js/787.5e81464e.chunk.js",
+    "static/media/Sea.mp4": "/react-portfolio/static/media/Sea.a5440a83c48592076bc8.mp4",
+    "static/media/Profile.PNG": "/react-portfolio/static/media/Profile.4c27d7a8d3d42338fe9e.PNG",
+    "static/media/jamesMontgomeryFullStackDeveloper.pdf": "/react-portfolio/static/media/jamesMontgomeryFullStackDeveloper.3aaabf1b941341edb21b.pdf",
+    "index.html": "/react-portfolio/index.html",
+    "main.beaae4d7.js.map": "/react-portfolio/static/js/main.beaae4d7.js.map",
+    "787.5e81464e.chunk.js.map": "/react-portfolio/static/js/787.5e81464e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.beaae4d7.js"
+  ]
+}

@@ -3,7 +3,8 @@ import Header from "./Header";
 import About from "../pages/AboutMe";
 import Projects from "../pages/Projects";
 import Contact from "./Contact";
-import { Container, Grid, createTheme, ThemeProvider, Paper } from "@mui/material";
+import { Container, Grid} from "@mui/material";
+import Resume from "./Resume";
 
 
 export default function Portfolio() {
@@ -17,6 +18,8 @@ export default function Portfolio() {
                 return <Projects/>;
             case 'Contact':
                 return <Contact/>;
+            case 'Resume':
+                return <Resume/>;
         }
     };
 
